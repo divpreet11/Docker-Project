@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+  labels:
+    owner: Divpreet
+spec:
+  containers:
+  - name: my-calculator
+    image: divu11/web-image
+    ports:
+    - containerPort: 80

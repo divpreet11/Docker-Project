@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: calculator-service
+  labels: 
+    app: calculator-project
+spec:
+  selector:
+    app: calculator-project
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: NodePort
