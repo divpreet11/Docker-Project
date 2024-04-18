@@ -10,3 +10,11 @@ spec:
     image: divu11/web-image
     ports:
     - containerPort: 80
+
+    resources:
+      limits:
+        cpu: "0.5"  
+        memory: "256Mi"  
+      requests:
+        cpu: "0.1"  
+        memory: "64Mi"  
